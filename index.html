@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Almar Louisse Inoferio — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">&lt;portfolio /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <div class="hero-tag">Available for Internship</div>
+      <h1>
+        Hi, I'm<br>
+        <span class="accent">Almar Louisse</span><br>
+        <span class="accent2">Inoferio</span>
+      </h1>
+      <p class="hero-sub">
+        BS Computer Science student at<br>
+        <span>Mapúa Malayan Colleges of Mindanao</span><br>
+        Building things for the web &amp; beyond.
+      </p>
+      <div class="btn-row">
+        <a href="#projects" class="btn btn-primary">View Projects &rarr;</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Replace your-photo.jpg with your actual photo file -->
+    <div class="hero-avatar">
+      <img src="images/ppic.jpg" alt="Almar Louisse Inoferio">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01.</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a <strong>BS Computer Science</strong> undergraduate at Mapúa Malayan Colleges of Mindanao (MMCM), passionate about crafting software solutions that are both functional and elegant.
+        </p>
+        <p>
+          I enjoy working across the full stack — from designing clean user interfaces to building robust back-end systems. I'm always curious about emerging technologies and love turning ideas into reality through code.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring open-source projects, solving algorithm challenges, or leveling up my skills in machine learning and cloud computing.
+        </p>
+        <div class="skills-strip">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Figma</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-val">MMCM</div>
+          <div class="stat-key">University</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">BS CS</div>
+          <div class="stat-key">Degree</div>
+        </div>
+        <div class="stat-card" style="grid-column: span 2;">
+          <div class="stat-val">&#8734;</div>
+          <div class="stat-key">Curiosity</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">02.</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- Card 1: replace project1.jpg with your screenshot and href with your project link -->
+      <div class="project-card">
+        <img src="images/project1.png" alt="Project 1" class="project-img">
+        <div class="project-title">Tecson Rentals</div>
+        <div class="project-desc">A web application designed to manage rental contracts, including essential features such as contract handling, tenant details, and house rules management.</div>
+        <div class="project-tags">
+          <span class="project-tag">C++</span>
+          <span class="project-tag">.Net</span>
+        </div>
+        <a href="https://github.com/SavvSean/RentalContracts" class="project-link" target="_blank">View Project &rarr;</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card">
+        <img src="images/project2.png" alt="Project 2" class="project-img">
+        <div class="project-title">Restaurant Reviewer</div>
+        <div class="project-desc">A simple web app that allows users to rate local restaurants either anonymously or with their identity, making feedback flexible and accessible.</div>
+        <div class="project-tags">
+          <span class="project-tag">Java</span>
+          
+        </div>
+        <a href="https://github.com/Xlai05/RestaurantReview" class="project-link" target="_blank">View Project &rarr;</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card">
+        <img src="images/project3.png" alt="Project 3" class="project-img">
+        <div class="project-title">SpaceRAAH</div>
+        <div class="project-desc">A Python game built using Turtle where players shoot incoming enemies, with difficulty increasing the longer they survive.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+        </div>
+        <a href="#" class="project-link" target="_blank">View Project &rarr;</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card">
+        <img src="images/project4.png" alt="Project 4" class="project-img">
+        <div class="project-title">Tubig Lami</div>
+        <div class="project-desc">A web-based system for water business management featuring employee/admin roles, ordering system, inventory tracking, sales reports, and secure login.</div>
+        <div class="project-tags">
+          <span class="project-tag">Html</span>
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <a href="https://github.com/Xlai05/bsmcm.github.io" class="project-link" target="_blank">View Project &rarr;</a>
+      </div>
+
+      <!-- Hidden cards (shown after View More) -->
+      <div class="project-card hidden-card">
+        <img src="images/project5.png" alt="Project 5" class="project-img">
+        <div class="project-title">Health Hub</div>
+        <div class="project-desc">A mobile application focused on health assistance, featuring a structured symptom checker, recommended exercises and food suggestions, activity tracking, and weekly fitness goals.</div>
+        <div class="project-tags">
+          <span class="project-tag">Mobile App</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">TypeScript</span>
+        </div>
+        <a href="https://github.com/SavvSean/HealthHub" class="project-link" target="_blank">View Project &rarr;</a>
+      </div>
+
+      
+
+    </div>
+    <div class="view-more-wrap">
+      <button class="btn btn-ghost" id="projects-toggle" onclick="toggleProjects()">View More &darr;</button>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="section-header">
+      <span class="section-num">03.</span>
+      <h2 class="section-title">Certificates</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="certs-grid" id="certs-grid">
+
+      <!-- Cert 1: replace cert1.jpg with your certificate image and href with the cert link -->
+      <div class="cert-card">
+        <div class="cert-img-wrap"><img src="images/cert1.png" alt="Certificate 1"></div>
+        <div class="cert-body">
+          <div class="cert-name">Create High-Fidelity Designs and Prototypes in Figma</div>
+          <div class="cert-issuer">Google &middot; 2025</div>
+          <a href="https://coursera.org/share/625078f7e77bd1fdae7451565238a1be" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <!-- Cert 2 -->
+      <div class="cert-card">
+        <div class="cert-img-wrap"><img src="images/cert2.png" alt="Certificate 2"></div>
+        <div class="cert-body">
+          <div class="cert-name">Conduct UX Research and Test Early Concepts</div>
+          <div class="cert-issuer">Google &middot; 2025</div>
+          <a href="https://coursera.org/share/d126b9420f606a79e846a4c6d2bb98d1" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <!-- Cert 3 -->
+      <div class="cert-card">
+        <div class="cert-img-wrap"><img src="images/cert3.png" alt="Certificate 3"></div>
+        <div class="cert-body">
+          <div class="cert-name">Start the UX Design Process: Empathize, Define, and Ideate</div>
+          <div class="cert-issuer">Google &middot; 2025</div>
+          <a href="https://coursera.org/share/625078f7e77bd1fdae7451565238a1be" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <!-- Cert 4 -->
+      <div class="cert-card">
+        <div class="cert-img-wrap"><img src="images/cert4.png" alt="Certificate 4"></div>
+        <div class="cert-body">
+          <div class="cert-name">Foundations of User Experience (UX) Design</div>
+          <div class="cert-issuer">IBM &middot; 2026</div>
+          <a href="https://coursera.org/share/c04b381345344d074ff2084023418fee" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <!-- Hidden certs -->
+      <div class="cert-card cert-hidden">
+        <div class="cert-img-wrap"><img src="images/cert5.png" alt="Certificate 5"></div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction to Software Engineering</div>
+          <div class="cert-issuer">IBM &middot; 2026</div>
+          <a href="https://coursera.org/share/76bd07b439254f8691f0b159c1cddb51" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <div class="cert-card cert-hidden">
+        <div class="cert-img-wrap"><img src="images/cert6.png" alt="Certificate 6"></div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction to Machine Learning</div>
+          <div class="cert-issuer">Duke University &middot; 2025</div>
+          <a href="https://coursera.org/share/9fb55814ffda0b4e7ea1e3b539dd529a" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <div class="cert-card cert-hidden">
+        <div class="cert-img-wrap"><img src="images/cert7.png" alt="Certificate 6"></div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction to Networking and Storage</div>
+          <div class="cert-issuer">IBM &middot; 2025</div>
+          <a href="https://coursera.org/share/3b10c17a170bfce3e9d28d61eb8f6b62" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <div class="cert-card cert-hidden">
+        <div class="cert-img-wrap"><img src="images/cert8.png" alt="Certificate 6"></div>
+        <div class="cert-body">
+          <div class="cert-name">Data Mining Methods</div>
+          <div class="cert-issuer">University of Colorado Boulder &middot; 2025</div>
+          <a href="https://coursera.org/share/bcdfaa331bfac62c619590a012453ae4" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+      <div class="cert-card cert-hidden">
+        <div class="cert-img-wrap"><img src="images/cert9.png" alt="Certificate 6"></div>
+        <div class="cert-body">
+          <div class="cert-name">Build Wireframes and Low-Fidelity Prototypes</div>
+          <div class="cert-issuer">Google &middot; 2025</div>
+          <a href="https://coursera.org/share/fa88b8267232bf9c56244243c00cc0f1" class="cert-view" target="_blank">View Certificate &#8599;</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="view-more-wrap">
+      <button class="btn btn-ghost" id="certs-toggle" onclick="toggleCerts()">View More &darr;</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">04.</span>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <h3>Let's build something together.</h3>
+        <p>
+          Whether it's an internship, collaboration, or just a chat about tech &mdash;
+          my inbox is always open. Drop me a message!
+        </p>
+        <div class="contact-links">
+          <div class="contact-link">
+            <span class="cl-icon">&#9993;&#65039;</span>
+            <div>
+              <div class="cl-label">Email</div>
+              <div>inoferio.ialmar@gmail.com</div>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/in/inoferio-almar" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="cl-icon">&#128188;</span>
+            <div>
+              <div class="cl-label">LinkedIn</div>
+              <div>www.linkedin.com/in/inoferio-almar</div>
+            </div>
+          </a>
+          <a href="https://github.com/xlai05" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="cl-icon">&#128025;</span>
+            <div>
+              <div class="cl-label">GitHub</div>
+              <div>github.com/xlai05</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input class="form-input" type="text" placeholder="Juan dela Cruz">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" placeholder="juan@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Hi! I'd like to talk about..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="align-self:flex-start;">Send Message &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      Designed &amp; built by <span>Almar Louisse Inoferio</span>
+    </div>
+    <div class="footer-school">Map&uacute;a Malayan Colleges of Mindanao &middot; BS Computer Science</div>
+  </footer>
+
+  <script>
+    function toggleProjects() {
+      var btn = document.getElementById('projects-toggle');
+      var cards = document.querySelectorAll('#projects-grid .hidden-card');
+      var open = btn.dataset.open === 'true';
+      cards.forEach(function(c) { open ? c.classList.remove('shown') : c.classList.add('shown'); });
+      btn.dataset.open = !open;
+      btn.innerHTML = open ? 'View More &darr;' : 'Show Less &uarr;';
+    }
+
+    function toggleCerts() {
+      var btn = document.getElementById('certs-toggle');
+      var cards = document.querySelectorAll('#certs-grid .cert-hidden');
+      var open = btn.dataset.open === 'true';
+      cards.forEach(function(c) { open ? c.classList.remove('shown') : c.classList.add('shown'); });
+      btn.dataset.open = !open;
+      btn.innerHTML = open ? 'View More &darr;' : 'Show Less &uarr;';
+    }
+
+    // Active nav highlight on scroll
+    var sections = document.querySelectorAll('section[id]');
+    var navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', function() {
+      var current = '';
+      sections.forEach(function(s) { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      navLinks.forEach(function(a) {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent2)' : '';
+      });
+    });
+  </script>
+</body>
+</html>
