@@ -344,7 +344,8 @@
           <label class="form-label">Message</label>
           <textarea id="contact-message" class="form-textarea" placeholder="Hi! I'd like to talk about..."></textarea>
         </div>
-        <button type="button" class="btn btn-primary" onclick="sendEmail()" style="align-self:flex-start;">Send Message &rarr;</button>
+        <button type="button" class="btn btn-primary" id="send-btn" onclick="sendEmail()" style="align-self:flex-start;">Send Message &rarr;</button>
+        <p id="form-status" style="font-size:14px; margin-top:8px; display:none;"></p>
       </div>
     </div>
   </section>
@@ -358,19 +359,49 @@
   </footer>
 
   <script>
-    function sendEmail() {
+    async function sendEmail() {
       var name = document.getElementById('contact-name').value.trim();
       var email = document.getElementById('contact-email').value.trim();
       var message = document.getElementById('contact-message').value.trim();
+      var status = document.getElementById('form-status');
+      var btn = document.getElementById('send-btn');
 
-      var subject = encodeURIComponent('Portfolio message from ' + (name || 'a visitor'));
-      var body = encodeURIComponent(
-        'Name: ' + (name || 'Not provided') + '\n' +
-        'Email: ' + (email || 'Not provided') + '\n\n' +
-        'Message:\n' + (message || 'No message provided')
-      );
+      if (!name || !email || !message) {
+        status.style.display = 'block';
+        status.style.color = '#e53e3e';
+        status.textContent = 'Please fill in all fields.';
+        return;
+      }
 
-      window.location.href = 'mailto:inoferio.ialmar@gmail.com?subject=' + subject + '&body=' + body;
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      status.style.display = 'none';
+
+      try {
+        var res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ name: name, email: email, message: message })
+        });
+
+        if (res.ok) {
+          status.style.display = 'block';
+          status.style.color = '#38a169';
+          status.textContent = '✓ Message sent! I\'ll get back to you soon.';
+          document.getElementById('contact-name').value = '';
+          document.getElementById('contact-email').value = '';
+          document.getElementById('contact-message').value = '';
+        } else {
+          throw new Error('Failed');
+        }
+      } catch (e) {
+        status.style.display = 'block';
+        status.style.color = '#e53e3e';
+        status.textContent = 'Something went wrong. Try emailing me directly.';
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Send Message →';
     }
 
     function toggleProjects() {
